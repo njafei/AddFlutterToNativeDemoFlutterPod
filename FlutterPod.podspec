@@ -17,17 +17,16 @@ Pod::Spec.new do |s|
 
   s.name         = "FlutterPod"
   s.version      = "0.0.1"
-  s.summary      = "A short description of FlutterPod."
+  s.summary      = "flutter frameworks to pod"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "this is a pod which store flutter release frameworks"
 
-  s.homepage     = "http://EXAMPLE/FlutterPod"
+  s.homepage     = "https://github.com/njafei/AddFlutterToNativeDemoFlutterPod"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +37,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license   = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/FlutterPod.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/njafei/AddFlutterToNativeDemoFlutterPod.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,6 +131,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.vendeored_framework = 'App.framework', 'engine/*.framework'
+  s.vendored_frameworks = 'App.framework', 'engine/*.framework'
 
 end
