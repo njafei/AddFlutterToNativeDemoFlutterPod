@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
   s.summary      = "flutter frameworks to pod"
   s.description  = "this is a pod which store flutter release frameworks"
   s.homepage     = "https://github.com/njafei/AddFlutterToNativeDemoFlutterPod"
-  s.license   = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "liufei" => "njafei@163.com" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author       = { "liufei" => "njafei@163.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/njafei/AddFlutterToNativeDemoFlutterPod.git", :tag => "#{s.version}" }
-  s.resource  = "flutter_assets"
-  s.vendored_frameworks = 'App.framework', 'engine/*.framework'
+  s.resource     = "flutter_assets"
+  s.vendored_frameworks =  'engine/*.framework'
 
 end
